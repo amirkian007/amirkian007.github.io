@@ -11,11 +11,11 @@ Features:
 ## Install
 
 ```
-npm install --save-dev webfonts-generator
+npm install --save-dev svg-to-webfont
 ```
 or
 ```
-yarn add --save-dev webfonts-generator
+yarn add --save-dev svg-to-webfont
 ```
 
 ## Usage
