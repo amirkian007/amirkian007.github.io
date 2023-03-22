@@ -274,18 +274,6 @@ format and matching generator:
 - `woff` - [ttf2woff](https://github.com/fontello/ttf2woff).
 - `eot` - [ttf2eot](https://github.com/fontello/ttf2eot).
 
-```js
-webfontsGenerator({
-  // options
-  formatOptions: {
-  	// options to pass specifically to the ttf generator
-  	ttf: {
-  		ts: 1451512800000
-  	}
-  }
-}, function(error, result) {})
-```
-
 ### writeFiles
 
 Type: `boolean`
@@ -298,15 +286,6 @@ It is possible to not create files and get generated fonts in object
 Also results object will have function `generateCss([urls])`
 where `urls` is an object with future fonts urls.
 
-```js
-webfontsGenerator({
-  // options
-  writeFiles: false
-}, function(error, result) {
-  // result.eot, result.ttf, etc - generated fonts
-  // result.generateCss(urls) - function to generate css
-})
-```
 
 ## License
 
