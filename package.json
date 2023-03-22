@@ -1,30 +1,35 @@
 {
   "name": "svg-to-webfont",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "",
   "main": "src/iconPackGenerator.js",
   "bin": {
     "svg-to-webfont": "./bin/run.js"
   },
+  "files": [
+    "bin",
+    "src"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "amirkian adl - amircc1200@gmail.com",
+  "license": "MIT",
   "dependencies": {
+    "chalk": "4.1.2",
     "commander": "^10.0.0",
-    "svg2ttf": "^6.0.3",
-    "webfont": "^11.2.26",
     "handlebars": "^4.0.5",
     "mkdirp": "^0.5.0",
     "q": "^1.1.2",
+    "svg2ttf": "^6.0.3",
     "svgicons2svgfont": "^5.0.0",
     "ttf2eot": "^2.0.0",
     "ttf2woff": "^2.0.1",
-    "ttf2woff2": "^2.0.3",
+    "ttf2woff2": "^5.0.0",
     "underscore": "^1.7.0",
-    "url-join": "^1.1.0"
+    "url-join": "^1.1.0",
+    "webfont": "^11.2.26"
   },
   "devDependencies": {
     "file-type": "^3.9.0",

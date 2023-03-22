@@ -1,9 +1,9 @@
 {
     "dest": "dist",
     "icons": "icons",
-    "fontName": "soup",
+    "fontName": "ircolor-icons",
     "css": true,
-    "cssDest": "dist/css/soup.css",
+    "cssDest": "dist/css/ircolor-icons.css",
     "cssFontsUrl": "../fonts/",
     "types": [
         "woff",

@@ -1,12 +1,13 @@
 const webfontsGenerator = require('./webFont');
 const fs = require('fs');
 const path = require('path');
-
-function generateIconPack(options) {
+const chalk = require('chalk')
+const generateIconPackage = function(options) {
 
   const distFolderPath = path.resolve(process.cwd(), options.dest);
   const iconsFolderPath = path.resolve(process.cwd(), options.icons);
   fs.readdir(iconsFolderPath, (err, files) => {
+ 
     if (err) {
       return;
     }
@@ -20,7 +21,7 @@ function generateIconPack(options) {
         if (error) {
           console.log('Error generating web-fonts:', error);
         } else {
-          console.log('Web-fonts generated successfully');
+          console.log(chalk.bgGreen('Web-fonts generated successfully !'));
         }
       });
     }
@@ -35,7 +36,7 @@ function generateIconPack(options) {
   });
 }
 
-function deleteFolderRecursive(folderPath) {
+const deleteFolderRecursive = function(folderPath) {
   if (fs.existsSync(folderPath)) {
     fs.readdirSync(folderPath).forEach((file) => {
       const curPath = path.join(folderPath, file);
@@ -53,5 +54,5 @@ function deleteFolderRecursive(folderPath) {
 }
 
 module.exports = {
-  generateIconPack
+  generateIconPackage
 }
