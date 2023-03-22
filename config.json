@@ -1,0 +1,18 @@
+{
+    "dest": "dist",
+    "icons": "icons",
+    "fontName": "soup",
+    "css": true,
+    "cssDest": "dist/css/soup.css",
+    "cssFontsUrl": "../fonts/",
+    "types": [
+        "woff",
+        "woff2",
+        "ttf",
+        "eot"
+    ],
+    "templateOptions": {
+        "classPrefix": "i-",
+        "baseSelector": ".i"
+    }
+}
